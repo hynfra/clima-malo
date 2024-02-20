@@ -1,0 +1,12 @@
+#logo{
+    width: 20rem;
+    height: 10rem;
+}
+#barra{
+    background-color: #e83e8c;
+    color: #ffff;
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+

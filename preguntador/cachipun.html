@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cachipun</title>
+</head>
+<body>
+    <p>juguemos cachipun</p>
+    <p>jugar cachipun con el usuario</p>
+    <p>jugar cachipun hasta que el usuario diga que no</p>
+    <script>
+        const jugada_usuario = prompt('Elija\n1: Piedra\n2:Papel\n3: Tijeras')
+        const jugada_cpu = Math.ceil(Math.random() * 3)
+        if(jugada_usuario == 1){
+            if(jugada_cpu == 1){
+                prompt("empate")
+            }else if(jugada_cpu == 2){
+                prompt("Perdio, yo elijo papel")
+            }else{
+                prompt("Ha ganado")
+            }
+        }else if (jugada_usuario == 2){
+            if(jugada_cpu == 1){
+                prompt("Ha ganado")
+            }else if(jugada_cpu == 2){
+                prompt("empate")
+            }else{
+                prompt("Perdio, yo elijo tijeras")
+            }
+        }else if(jugada_usuario == 3){
+            if(jugada_cpu == 1){
+                prompt("Perdio, yo elijo piedra")
+                
+            }else if(jugada_cpu == 2){
+                prompt("Ha ganado")
+            }else{
+                prompt("empate")
+               
+            }
+        }else{
+            prompt("Debe escoger una de las opciones")
+        }
+    </script>
+    
+</body>
+</html>
